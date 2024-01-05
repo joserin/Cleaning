@@ -7,4 +7,5 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://joserin.github.io',
   base: '/Cleaning',
+  output: "server"
 });
