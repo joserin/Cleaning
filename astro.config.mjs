@@ -6,6 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://joserin.github.io',
-  base: '/Cleaning',
-  output: "server"
+  base: '/Cleaning'
 });
