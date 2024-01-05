@@ -1,0 +1,37 @@
+---
+import InfoCard from "./InfoCard.astro";
+import i18n from "../i18n/text.json"
+---
+
+<section class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-3 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}>
+
+  <InfoCard
+    title={i18n.CARD_TITLE_1}
+    body={i18n.CARD_BODY_1}
+    image="/toalla.webp"
+    >
+
+
+  </InfoCard>
+  <InfoCard
+    title={i18n.CARD_TITLE_2}
+    body={i18n.CARD_BODY_2}
+    image="/esponja.webp"
+    >
+
+
+  </InfoCard>
+  <InfoCard
+    title={i18n.CARD_TITLE_3}
+    body={i18n.CARD_BODY_3}
+    image="/limpio.webp"
+    >
+
+
+  </InfoCard>
+
+</section>

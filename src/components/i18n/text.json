@@ -1,0 +1,49 @@
+{
+    "SEO_TITLE": "Premios ESLAND 2024 - Celebrando lo mejor del streaming y los creadores de contenido",
+    "SEO_DESCRIPTION": "Descubre a los mejores creadores de contenido de España, Latinoamérica y Andorra. ¡Vota por tus favoritos! Celebra la innovación y el talento de Twitch, YouTube y más",
+    "HEADER_1": "INFO",
+    "HEADER_2": "ARCHIVO",
+    "HEADER_BUTTON": "ESLAND: EL DOCUMENTAL",
+    "INTRO_TITLE": "Bienvenidos/as",
+    "INTRO_TITLE_AFTER_BR": "a los Premios ESLAND",
+    "INTRO_DESCRIPTION_1": "El cine tiene los Oscars, la música tiene los Grammy y <strong>el streaming tiene los ESLAND</strong>. Los premios que celebran la creatividad y el talento de los mejores creadores de contenido de <strong>la comunidad hispanohablante</strong>",
+    "INTRO_DESCRIPTION_2": "España, Latinoamérica y Andorra unidas por creadores, creadoras y sus comunidades, para recordar y revivir <strong>algunos de los mejores momentos del año.</strong>",
+    "INTRO_DESCRIPTION_3": "Tras dos galas celebradas, una en el Palau de la Música Catalana de Barcelona, y otra en el Auditorio Nacional de la Ciudad de México, solo queda esperar a <strong>la tercera edición en Andorra.</strong>",
+    "BENTO_TITLE_1": "Unleash the Sparkle",
+    "BENTO_CONTENT_1": "Deep cleaning secrets for spotless spaces.",
+    "BENTO_TITLE_2": "Get Down & Dirty:",
+    "BENTO_SUBTITLE_2": "Your ultimate deep cleaning playbook",
+    "BENTO_CONTENT_2": "Mop the floor with a disinfectant cleaner suitable for your flooring type.",
+    "BENTO_TITLE_3": "Roll Up Your Sleeves",
+    "BENTO_SUBTITLE_3": "Time to deep clean like a pro",
+    "BENTO_CONTENT_3": "Deep cleaning hacks for every room.",
+    "BENTO_TITLE_4": "Sparkling Starts Here",
+    "BENTO_CONTENT_4": "Deep clean your way to a healthy home.",
+    "CARD_TITLE_1": "Breathe Easy and Book",
+    "CARD_BODY_1": "Short and sweet, it emphasizes the easy booking process. Breathe Easy evokes the feeling of relaxed anticipation for a clean home.",
+    "CARD_TITLE_2": "Sparkle Squad in Action",
+    "CARD_BODY_2": "Playful and memorable, highlighting your cleaning team's efficiency. Sparkle Squad creates a positive and energetic image.",
+    "CARD_TITLE_3": "Unwind in Your Oasis",
+    "CARD_BODY_3": "Focuses on the end result: a comfortable and welcoming home. Oasis adds a touch of luxury and escape.",
+    "BLOG_TITLE":"Blog",
+    "BLOG_DESCRIPTION":"Place to geting information",
+    "PREFOOTER_VIDEO_TITLE": "Guía de la 3ª Edición de los premios ESLAND",
+    "FOOTER": {
+      "DISCLAIMER": "© ESLAND 2021 - 2024 Todos los derechos reservados. - Esta no es la web oficial, desarrollada por @midudev para fines educativos",
+      "LEGAL": {
+        "TITLE": "Legal",
+        "NOTICE": "Aviso Legal",
+        "PRIVACY": "Privacidad",
+        "COOKIES": "Cookies",
+        "PRIVACY_POLICY": "Política de Privacidad",
+        "TOS": "Términos y Condiciones"
+      },
+      "WEB_MAP": {
+        "TITLE": "Mapa Web",
+        "HOME": "Inicio",
+        "INFO": "Info",
+        "ARCHIVE": "Archivo"
+      },
+      "PRODUCED_BY": "Producido por"
+    }
+  }
