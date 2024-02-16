@@ -1,28 +1,41 @@
 ---
-import ButtonLink from "../ButtonLink.astro";
+import Contactform from "../../components/contactform.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
 ---
 
-  <section class="flex justify-center items-center gap-8 flex-col bg-slate-600 py-2">
-        <h3 class="flex items-center font-tomaso">
-          <span>Contact Us</span>
-        </h3>
-        <div >
-          <a class="w-fit lg:text-2xl font-medium text-white no-underline px-5 py-3
-          border border-solid border-white rounded-full Uppercase"
-            href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
-          >
-          <ButtonLink class="animate-fade-up" url="/contact">
-            Book Now
-          </ButtonLink>
+  <Container id="contact">
+    <Sectionhead>
+      <Fragment slot="title">Contact</Fragment>
+      <Fragment slot="desc">We are a here to help.</Fragment>
+    </Sectionhead>
 
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          Have something to say? We are here to help. Fill up the form or send
+          email or call phone.
+        </p>
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <span>1734 Sanfransico, CA 93063</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <a
+              href="mailto:hello@astroshipstarter.com"
+              >hello@astroshipstarter.com</a
+            >
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <a
+              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
+            >
+          </div>
         </div>
-        
-        <h3 class="flex items-center font-tomaso">
-            <span>CONNECT WITH US</span>
-        </h3>
-        <div class="w-fit">
-          <span>facebook</span>
-          <span>instagram</span>
-        </div>
-        
-  </section>
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
