@@ -2,6 +2,7 @@
 //import { SEO } from "astro-seo";
 import Footer from "../components/footer.astro";
 import Navbar from "../components/navbar/navbar.astro";
+import Prefooter from "../components/prefooter.astro";
 interface Props {
 	title: string;
 	description: string;
@@ -18,9 +19,10 @@ const { title, description } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-gradient-to-r from-purple-200 to-indigo-300">
 		<Navbar />
 		<slot />
+		<Prefooter />
 		<Footer />
 	</body>
 </html>

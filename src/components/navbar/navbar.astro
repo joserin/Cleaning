@@ -1,61 +1,46 @@
 ---
 import Container from "../container.astro";
-//import Dropdown from "./dropdowns.astro";
+import Dropdown from "./dropdowns.astro";
 import Astronav  from "./Astronav.astro";
-//import MenuItems from "./MenuItems.astro";
-//import MenuIcon  from "./MenuIcon.astro";
-/*
+import MenuItems from "./MenuItems.astro";
+import MenuIcon  from "./MenuIcon.astro";
+
 const menuitems = [
   {
     title: "Home",
-    path: "/" 
+    path: "#inicio" 
   },
   {
     title: "About",
-    path: "/about",
+    path: "#about",
   },
   {
-    title: "Services",
-    path: "#",
-    children: [
-      { title: "Home & Apartment Cleaning", path: "/home" },
-      { title: "Carpet Cleaning", path: "/carpet" },
-      { title: "Organization", path: "organization" },
-      { title: "Small Office Cleaning", path: "office" },
-    ],
-  },
-  {
-    title: "Blog",
-    path: "/blog",
+    title: "Service",
+    path: "#service",
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: "#contacto",
   }
-];*/
+];
 ---
 
 
 <Container>
-  <header class="w-full items-center justify-between border-b border-transparent px-8 py-4 text-white fixed top-0 z-10 bg-[#FBFBFB]">
+  <header class="w-full items-center justify-between border-b border-transparent px-8 py-1 text-white fixed top-0 z-20 bg-[#FBFBFB]">
     <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between text-pretty">
-        <a href="#" class="flex items-center gap-3 hover:!text-default">
+      <div class="flex w-full lg:w-auto items-center justify-between text-pretty m-1">
+        <a href="#inicio" class="flex items-center gap-3 hover:!text-default">
           <span class="font-bold text-slate-800">Cleaning</span>
           <span class="text-slate-500">ship</span>
         </a>
-        {/* 
+        
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
-        </div>*/}
-        <a class="md:w-auto lg:text-2xl font-medium text-white no-underline px-5 py-3
-          border border-solid border-white rounded-full Uppercase bg-slate-400 bg-opacity-75"
-            href="tel:+1 (987) 4587 899">+1 (987) 4587 899
-        </a>
+        </div>
       </div>
-      {/* 
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+      <MenuItems class="hidden w-full lg:w-auto mt-1 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-2">
           {
             menuitems.map((item, index) => (
               <>
@@ -80,7 +65,9 @@ const menuitems = [
             ))
           }
         </ul>
-      </MenuItems>*/}
+      </MenuItems>
+      
+      
     </Astronav>
   </header>
 </Container>

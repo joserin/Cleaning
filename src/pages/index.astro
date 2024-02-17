@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Container from "../components/container.astro";
 import Portada from "../components/inicio/portada.astro";
+import Nosotros from "../components/inicio/nosotros.astro"
 import Guia from "../components/inicio/guia.astro";
 import Redes from "../components/inicio/redes.astro";
 ---
@@ -11,9 +12,10 @@ title="Cleaning Services"
 description="Sparkling homes, stress-free life. Cleaning made easy"
 >
 	<Container>
-		<Portada/>
-		<Guia/>
-		<Redes/>
+		<span id="inicio"><Portada/></span>
+		<span id="about"><Nosotros/></span>
+		<span id="service"><Guia/></span>
+		<span id="contacto"><Redes/></span>
 	</Container>
 </Layout>
 

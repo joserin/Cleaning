@@ -1,21 +1,20 @@
 ---
 import BentoItem from './BentoItem.astro'
 import i18n from "../i18n/text.json"
-
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
 ---
-
-<section
-  class={`
-    w-[80%] lg:w-full max-w-[1400px]
-    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20
-  `}
->
+<Container>
+  <Sectionhead>
+    <Fragment slot="title">Service</Fragment>
+    <Fragment slot="desc">We are a here to help.</Fragment>
+  </Sectionhead>
+  <section class={` lg:w-full max-w-[1400px] grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto md:p-12 lg:p-20 max-h-full`}>
   <BentoItem class='lg:col-span-4' title={i18n.BENTO_TITLE_1}>
     <div
       slot='image'
-      class='transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-blue-950
+      class='transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full w-full bg-blue-950
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110'
       style="background-image: url('/esponja.webp')"
     >
@@ -23,7 +22,7 @@ import i18n from "../i18n/text.json"
 
     <p
       slot='content'
-      class='max-w-xl text-base md:text-lg'
+      class='max-w-xl text-base md:text-lg text-white'
       set:html={i18n.BENTO_CONTENT_1}
     />
   </BentoItem>
@@ -42,7 +41,7 @@ import i18n from "../i18n/text.json"
     </div>
     <p
       slot='content'
-      class='max-w-xl text-base md:text-lg'
+      class='max-w-xl text-base md:text-lg text-white'
       set:html={i18n.BENTO_CONTENT_2}
     />
   </BentoItem>
@@ -61,7 +60,7 @@ import i18n from "../i18n/text.json"
     </div>
     <p
       slot='content'
-      class='max-w-xl text-base md:text-lg'
+      class='max-w-xl text-base md:text-lg text-white'
       set:html={i18n.BENTO_CONTENT_3}
     />
   </BentoItem>
@@ -76,8 +75,10 @@ import i18n from "../i18n/text.json"
     </div>
     <p
       slot='content'
-      class='max-w-xl text-base md:text-lg'
+      class='max-w-xl text-base md:text-lg text-white'
       set:html={i18n.BENTO_CONTENT_4}
     />
   </BentoItem>
 </section>
+
+</Container>
