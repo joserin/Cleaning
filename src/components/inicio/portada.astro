@@ -3,17 +3,15 @@ import Button from "../ButtonLink.astro";
 ---
 <div>
   <div class="relative h-[80vh] w-full max-w-[1400px] md:aspect-video top-[60px]">
-    <div
-      class="absolute left-0 z-10 m-auto flex flex-col items-center justify-center md:w-[70%]"
-    >
-      <section class="animate-fade-up flex gap-5 flex-col items-center justify-center">
+    <div class="absolute  z-10 m-auto flex flex-col md:w-[70%]">
+      <section class="animate-fade-up flex gap-5 flex-col items-center justify-center text-center">
         <h1 class="text-2xl md:text-4xl lg:gap-20 lg:text-6xl font-tomaso">
-          <span class="text-black bg-opacity-50" >Cleaning Service</span>
+          <span class="text-black bg-opacity-50 font-bold text-3xl md:text-5xl" >Splendor cleaning service llc</span>
         </h1>
-        <div class="gap-3 md:text-1xl lg:gap-7 lg:text-2xl">
-          <section class="m-3 text-pretty">
-            <strong>Professional and affordable house service:</strong>
-            <ul>
+        <div class="gap-3 lg:gap-7 lg:text-2xl">
+          <section class="m-3 text-pretty text-xl">
+            <strong class="text-2xl">Professional and affordable house service:</strong>
+            <ul class="p-2 m-2">
               <li>Reclaim your time. Relax in a sparkling clean home.</li>
               <li>Stress less, enjoy more. Book your professional cleaning today.</li>
               <li>Come home to clean. Let us handle the dirty work.</li>
@@ -28,7 +26,7 @@ import Button from "../ButtonLink.astro";
     </div>
   
     <img
-      class='transition-scale absolute md:right-0 -top-[50px] h-full bg-opacity-50 md:bg-opacity-0 p-6
+      class='transition-scale left-[50%] transform -translate-x-1/2 absolute md:right-0 md:translate-x-0 -top-[50px] h-full bg-opacity-50 md:bg-opacity-25 p-6
       bg-cover bg-center bg-no-repeat opacity-40 md:opacity-80 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110'
       src="/portada.webp"
       />

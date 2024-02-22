@@ -1,77 +1,61 @@
 ---
 import Container from "../container.astro";
-import Dropdown from "./dropdowns.astro";
 import Astronav  from "./Astronav.astro";
 import MenuItems from "./MenuItems.astro";
 import MenuIcon  from "./MenuIcon.astro";
-
-const menuitems = [
-  {
-    title: "Home",
-    path: "#inicio" ,
-    children: []
-  },
-  {
-    title: "About",
-    path: "#about",
-    children: []
-  },
-  {
-    title: "Service",
-    path: "#service",
-    children: []
-  },
-  {
-    title: "Contact",
-    path: "#contacto",
-    children: []
-  }
-];
+//fixed top-0 z-20
 ---
 
 
 <Container>
-  <header class="w-full items-center justify-between border-b border-transparent px-8 py-1 text-white fixed top-0 z-20 bg-[#FBFBFB]">
-    <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between text-pretty m-1">
-        <a href="#inicio" class="flex items-center gap-3 hover:!text-default">
-          <span class="font-bold text-slate-800">Cleaning</span>
-          <span class="text-slate-500">ship</span>
-        </a>
-        
-        <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
+  <header class="md:px-8 px-2 py-1 text-white fixed top-0 z-20 bg-[#ffffff] w-full left-[50%] transform -translate-x-1/2 m-1">
+    <div class="lg:flex lg:flex-row">
+      <Astronav>
+        <div class="flex w-full lg:w-auto items-center justify-between text-pretty m-1">
+          <a href="#inicio" class="flex items-center gap-3 hover:!text-default">
+            <span class="font-bold text-slate-800">Splendor cleaning service</span>
+            <span class="text-slate-500">llc</span>
+          </a>
+          
+          <div class="block lg:hidden p-2">
+            <MenuIcon class="w-4 h-4 text-gray-800" />
+          </div>
         </div>
-      </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-1 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-2">
-          {
-            menuitems.map((item, index) => (
-              <>
-                {item.children && (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                  />
-                )}
+        <MenuItems class="hidden w-full lg:w-auto mt-1 lg:flex lg:mt-0">
+          <ul class="flex flex-col lg:flex-row lg:gap-2">
+            <li>
+              <a
+                href="#inicio"
+                class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#service"
+                class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                <span>Service</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contacto"
+                class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </MenuItems>
+      </Astronav>
 
-                {!item.children && (
-                  <li>
-                    <a
-                      href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                      <span> {item.title}</span>
-                    </a>
-                  </li>
-                )}
-              </>
-            ))
-          }
-        </ul>
-      </MenuItems>
-      
-      
-    </Astronav>
+    </div>
+    
   </header>
 </Container>

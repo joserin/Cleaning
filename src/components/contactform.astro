@@ -20,6 +20,7 @@ import Button from "./button.astro";
       required
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
       name="name"
+      maxlength="35"
     />
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
       Please provide your full name.
@@ -31,6 +32,7 @@ import Button from "./button.astro";
       type="email"
       placeholder="Email Address"
       name="email"
+      maxlength="40"
       required
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     />
@@ -48,6 +50,7 @@ import Button from "./button.astro";
       id="phone"
       placeholder="+1 (555) 1234-567"
       required
+      maxlength="15"
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
       />
       <div class="empty-feedback text-red-400 text-sm mt-1">
@@ -59,13 +62,14 @@ import Button from "./button.astro";
       name="message"
       required
       placeholder="Your Message"
+      maxlength="200"
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
       Please enter your message.
     </div>
   </div>
-  <Button class="" type="submit" size="lg" block>Send Message</Button>
+  <Button class="bg-white" type="submit" size="lg" block>Send Message</Button>
 </form>
 
 <style>
